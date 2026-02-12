@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Classes Demo — Multiple, Multi-level, Multiple Selectors</title>
+    <style>
+        /* Multiple selectors */
+        h1,
+        h2 {
+            color: blue;
+        }
+
+        /* Multiple classes */
+        .box {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 24px;
+        }
+
+        /* Multilevel selectors */
+        .card p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BCA + BSc -IT WD-II Lab</h1>
+    <h2>1. Multiple Classes</h2>
+    <div class="box red big">This is a big red box.</div>
+
+    <h2>2. Multi-level Selector</h2>
+    <div class="card">
+        <p>This paragraph is inside .card so it turns green.</p>
+    </div>
+
+    <h2>3. Multiple Selectors</h2>
+    <p>Both H1 and H2 above are blue because of a multiple-selector rule.</p>
+</body>
