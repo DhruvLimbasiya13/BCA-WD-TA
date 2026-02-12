@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Student Registration</h1>
+
+    <center>
+        <form action="" method="post">
+            <table cellpadding="10" width="30%">
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="fullname" required></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" ></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="tel" name="mobile" pattern="[0-9]{10}" ></td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" rows="4" cols="30"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Nationality</td>
+                    <td><input type="text" name="nationality"></td>
+                </tr>
+
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Highest Degree</td>
+                    <td>
+                        <select name="degree">
+                            <option value="highschool">High School</option>
+                            <option value="bachelor">Bachelor's</option>
+                            <option value="master">Master's</option>
+                            <option value="phd">PhD</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CPI</td>
+                    <td><input type="number" name="cpi" step="0.01" min="0" max="10"></td>
+                </tr>
+
+                <tr>
+                    <td>University</td>
+                    <td><input type="text" name="university"></td>
+                </tr>
+
+                <tr>
+                    <td>Passing Year</td>
+                    <td>
+                        <select name="PassingYear">
+                            <option value="2020">2024</option>
+                            <option value="2021">2025</option>
+                            <option value="2022">2026</option>
+                            <option value="2023">2027</option>
+                            <option value="2024">2028</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
