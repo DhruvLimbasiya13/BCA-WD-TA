@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* Universal Selector - applies to ALL elements */
+        * {
+            text-align: center;
+        }
+
+        /* Group Selector - same style for h1 and p */
+        h1, p {
+            color: blue;
+        }
+
+        /* Descendant Selector - only <p> inside <div> */
+        div p {
+            background-color: red;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors Example</h1>
+
+    <p>This paragraph is styled by the <b>group selector</b> (h1, p).</p>
+
+    <div>
+        <p>This paragraph is inside a DIV, so it uses the <b>descendant selector</b> (div p).</p>
+    </div>
+
+    <p>This paragraph is NOT inside a div, so it does NOT use the descendant selector. This is also used group selector </p>
+
+</body>
+</html>

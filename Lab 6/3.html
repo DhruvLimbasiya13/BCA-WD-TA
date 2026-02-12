@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* Multiple Selection */
+        h1, h2, p {
+            font-family: Arial;
+            color: crimson;
+        }
+
+        
+
+        /* Adjacent Sibling Selector - style the first <p> immediately after <h2> */
+        h2 + p {
+            background-color: rebeccapurple;
+            padding: 5px;
+        }
+
+        /* Attribute Selector - style only text inputs */
+        input[type="password"] {
+            border: 2px solid green;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>BCA + BSc -IT WD-II Lab</h1>
+
+    <h2>Adjacent Sibling Example</h2>
+    <p>This paragraph is immediately after the h2, so it is styled by h2 + p.</p>
+
+    <p>This paragraph is NOT immediately after h2, so it is normal.</p>
+
+    <input type="text" placeholder="This is a text box"><br><br>
+    <input type="password" placeholder="Password (not styled)">
+    
+</body>
+</html>
