@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+        .header{
+            border: 2px solid red;
+            height: auto;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        .logo{
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px 20px;
+            margin-right: 20px;
+            height:auto;
+            line-height: 40px;
+        }
+
+        .navbar{
+            float: left;
+            padding-top: 20px;
+        }
+
+        .navbar a{
+            margin: 0px 6px;
+            color: blue;
+            font-size: 20px;
+        }
+
+        .main-content{
+            border: 2px solid green;
+            height: auto;
+            overflow: auto;
+        }
+
+        .menubar{
+            width: 15%;
+            border: 2px solid orange;
+            padding: 10px;
+            float: left;
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        .content{
+            width: 85%;
+            border: 2px solid green;
+            height: 100%;
+            padding: 12px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .menu-items{
+            border: 1px solid black;
+            padding: 15px;
+            margin-bottom: 13px;
+            text-align: center;
+            background-color: #f9f9f9;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .content-items{
+            border: 2px solid purple;
+            height: 16vh;
+            margin: 10px;
+            overflow: auto;
+        }
+
+        .inner-item1{
+            border: 2px dotted red;
+            height: 80%;
+            width: 45%;
+            margin: 10px 2%;
+            padding: auto;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .inner-item2{
+            border: 2px dotted red;
+            height: 80%;
+            width: 30%;
+            padding: auto;
+            margin: 10px 1.5%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .footer{
+            text-align: center;
+            border: 2px solid blue;
+            padding: 15px;
+            clear: both;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">Logo Here</div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="menubar">
+            <div class="menu-items">Result</div>
+            <div class="menu-items">Apply</div>
+            <div class="menu-items">Placement</div>
+            <div class="menu-items">Recrutment</div>
+            <div class="menu-items">News</div>
+        </div>
+
+        <div class="content">
+            <div class="content-items">
+                <div class="inner-item1"></div>
+                <div class="inner-item1"></div>
+            </div>
+            <div class="content-items">
+                <div class="inner-item2"></div>
+                <div class="inner-item2"></div>
+                <div class="inner-item2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Footer
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .header{
+            background-color: red;
+            height: 10vh;
+            width: 100%;
+            margin-bottom: 1vh;
+            padding: auto;
+            text-align: center;
+            align-content: center;
+            color: white;
+            p{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        .main{
+            overflow: hidden;
+            margin-bottom: 1vh;
+        }
+        .navigation{
+            background-color: blue;
+            float: left;
+            height: 80vh;
+            width: 20%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+        .content{
+            background-color: yellow;
+            width: 79%;
+            float: right;
+            position: relative;
+            height: 80vh;
+            align-content: center;
+            text-align: center;
+            
+            p{
+                margin-right: 22%;
+            }
+        }
+        .sidebar{
+            background-color: green;
+            width: 20%;
+            height: 66vh;
+            position:absolute ;
+            top: 0;
+            right: 0;
+            text-align: center;
+            align-content:center ;
+            border-left: 10px solid white;
+            border-bottom:10px solid white ;
+            color: white;
+        }
+        .footer{
+            background-color: darkcyan;
+            height: 10vh;
+            width: 100%;
+            text-align: center;
+            color: white;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><p>header</p></div>
+
+    <div class="main">
+        <div class="navigation">navigation</div>
+        <div class="content">
+            <p>content</p>
+            <div class="sidebar">sidebar</div>
+        </div>
+    </div>
+
+    <div class="footer">footer</div>
+</body>
+</html>

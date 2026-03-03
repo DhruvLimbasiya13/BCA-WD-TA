@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Column over 4 Column Layout</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .topbar {
+            width: 100%;
+            text-align: right;
+            padding: 8px 0;
+        }
+
+        .topbar-link {
+            color: #b33;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        .sidebar {
+            width: 160px;
+            background-color: lightgray;
+            padding: 12px;
+            width: 100%;
+            display: flex;
+            margin-bottom: 4px;
+        }
+
+        .nav-link {
+            display: block;
+            margin-bottom: 10px;
+            padding-right: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #b33;
+        }
+
+        .hero {
+            margin-bottom: 4px;
+            padding: 2px;
+            height: auto;
+            background-color: lightgray;
+        }
+
+        .site-title {
+            font-size: 28px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            width: auto;
+        }
+
+        .site-subtitle {
+            font-size: 18px;
+            color: gray;
+            margin-bottom: 60px;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+
+        .centerColumn {
+            margin: 25px 0;
+            padding-bottom: 18px;
+        }
+
+        .center-heading {
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 0px;
+        }
+
+        .center-text {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .sub-heading {
+            font-size: 16px;
+            color: gray;
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+
+        .three-columns {
+            display: flex;
+            gap: 4%;
+            margin-top: 20px;
+            a{
+                color: red;
+                margin-bottom: 0px;
+            }
+            p{
+                margin-top: 0px;
+            }
+        }
+
+        .cell-1,
+        .cell-2,
+        .cell-3 {
+            width: 32%;
+            padding: 10px;
+            background-color: lightgray;
+            
+        }
+
+        .four-boxes {
+            display: flex;
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 12px;
+            min-height: 80px;
+        }
+
+        .box-title {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .box-text {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .box-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: #b33;
+            font-size: 13px;
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            a{
+                color:red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Right Links -->
+    <div class="topbar">
+        <a class="topbar-link" href="#">LINKS »</a>
+        <a class="topbar-link" href="#">SITE MAP »</a>
+        <a class="topbar-link" href="#">CONTACT »</a>
+    </div>
+
+    <!-- Left Navigation -->
+    <nav class="sidebar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Gallery</a>
+        <a class="nav-link" href="#">Contact</a>
+    </nav>
+
+
+    <!-- Main Title Box -->
+    <div class="hero">
+        <p class="site-title">site title</p>
+        <p class="site-subtitle">fixed 3-column over 4-column layout</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="centerColumn">
+        <h2 class="center-heading">centerColumn</h2>
+        <p class="sub-heading">sub heading</p>
+        <p class="center-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facilis animi optio itaque, nulla ratione
+            debitis ea eum blanditiis libero accusamus beatae distinctio tempore sint dolor quaerat eaque ipsum dolore.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores nisi dolore esse at, optio earum,
+            nemo voluptas obcaecati perferendis aperiam maiores voluptates aut dicta laboriosam laudantium sunt tenetur
+            laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis eius molestias iste ab
+            quaerat maiores eligendi? Officia, earum ratione excepturi ab similique quasi in consequuntur, doloremque
+            eveniet veniam ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eligendi quasi
+            accusantium, voluptatum dignissimos commodi repudiandae beatae quibusdam, ipsam voluptas voluptates hic
+            vitae quia odit? Eos doloribus animi debitis dicta.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- 3 Column Section -->
+    <div class="three-columns">
+
+        <div class="cell cell-1">
+            <h3 class="cell-title">cell_1</h3>
+            <p class="cell-text">Quindecim Diana preces virorum curat et votis puerorum amicas adplicat auris.</p>
+            <a class="cell-link" href="#">Link</a>
+            <p>date <br> puerorum amicas aolicat auris</p>
+            <a class="cell-link" href="#">Link</a>
+            <p>date <br> puerorum amicas aolicat auris</p>
+        </div>
+
+        <div class="cell cell-2">
+            <h3 class="cell-title">cell_2</h3>
+            <p class="cell-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero unde nobis
+                iusto voluptates, illo exercitationem asperiores nam necessitatibus autem id esse amet et, dolorem
+                ratione provident voluptatibus sit optio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt suscipit a, ipsa, voluptatibus, ipsum eaque quaerat impedit nihil voluptate animi nostrum unde
+                sed. In fuga, est libero cupiditate doloribus quam. <br> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Distinctio, obcaecati eaque ullam eum asperiores enim eligendi dolore maxime est
+                reiciendis perspiciatis incidunt quis harum magnam labore quod tempore accusantium maiores!</p>
+        </div>
+
+        <div class="cell cell-3">
+            <h3 class="cell-title">cell_3</h3>
+            <p class="cell-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero unde nobis
+                iusto voluptates, illo exercitationem asperiores nam necessitatibus autem id esse amet et, dolorem
+                ratione provident voluptatibus sit optio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt suscipit a, ipsa, voluptatibus, ipsum eaque quaerat impedit nihil voluptate animi nostrum unde
+                sed. In fuga, est libero cupiditate doloribus quam. <br> Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Distinctio, obcaecati eaque ullam eum asperiores enim eligendi dolore maxime est
+                reiciendis perspiciatis incidunt quis harum magnam labore quod tempore accusantium maiores!</p>
+        </div>
+
+    </div>
+
+    <hr style="margin-top:20px;">
+
+    <!-- 4 Box Section -->
+    <div class="four-boxes">
+
+        <div class="box box-1">
+            <h4 class="box-title">box_1</h4>
+            <p class="box-text">Quindecim Diana preces virorum curat et votis puerorum amicas adplicat auris.</p>
+            <a class="box-link" href="#">Link...</a>
+        </div>
+
+        <div class="box box-2">
+            <h4 class="box-title">box_2</h4>
+            <p class="box-text">Quindecim Diana preces virorum curat et votis puerorum amicas adplicat auris.</p>
+            <a class="box-link" href="#">Link...</a>
+        </div>
+
+        <div class="box box-3">
+            <h4 class="box-title">box_3</h4>
+            <p class="box-text">Quindecim Diana preces virorum curat et votis puerorum amicas adplicat auris.</p>
+            <a class="box-link" href="#">Link...</a>
+        </div>
+
+        <div class="box box-4">
+            <h4 class="box-title">box_4</h4>
+            <p class="box-text">Quindecim Diana preces virorum curat et votis puerorum amicas adplicat auris.</p>
+            <a class="box-link" href="#">Link...</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Copyright © 2005-2006
+            <a rel="stylesheet" href="">Company Name | </a>
+            <a rel="stylesheet" href=""> The CSS Tinderbox </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

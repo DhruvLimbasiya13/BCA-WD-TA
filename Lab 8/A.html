@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic 1-Column Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Page box */
+        .page {
+            width: auto;
+            margin: 0 auto;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        /* Header */
+        .banner {
+            border: 1px solid lightgray;
+            padding: 15px;
+            margin-bottom: 15px;
+            height: 15vh;
+        }
+
+        .site-title {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: gray;
+        }
+
+        /* Main Area */
+        .main {
+            overflow: hidden;
+        }
+
+        .content{
+            display: flex;
+        }
+
+        /* Right Column */
+        .right-column {
+            width: 25%;
+            height: 26vh;
+            position: relative;
+            top: 0;
+            right: 0;
+            border: 1px solid lightgray;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+
+        .right-column a {
+            display: block;
+            margin-bottom: 5px;
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Center Column */
+        .center-column {
+            width: 75%;
+            padding: 10px;
+        }
+
+        .center-column h2 {
+            margin: 10px 0;
+        }
+
+        .center-column p {
+            margin-bottom: 10px;
+        }
+
+        /* List */
+        ul {
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background-color: #eee;
+            padding: 10px;
+            border-left: 3px solid gray;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .footer a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <div class="banner">
+            <div class="site-title">site title</div>
+            <div class="tagline">fixed 1-column layout (basic)</div>
+        </div>
+
+        <!-- Main -->
+        <div class="main">
+
+            <div class="content">
+                <!-- Center Column -->
+                <div class="center-column">
+
+                    <h2>centerColumn</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate totam ut voluptatem, libero eos voluptas, placeat cum in ipsa ipsum unde sed optio! Accusamus consequatur incidunt asperiores iure quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea earum fuga nam id quos ab dolor, vel autem recusandae beatae necessitatibus rerum impedit, accusamus alias hic, ut dolore expedita soluta.
+                    </p>
+
+                    <h2>Header 2</h2>
+
+                    <a class="link-item" href="#">Link Item</a>
+
+                    <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item
+                            <ul>
+                                <li>List Item</li>
+                                <li>List Item</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <strong>fauxRightColumn</strong><br><br>
+
+                    <a href="#">Link Item</a>
+                    <a href="#">Link Item</a>
+                    <a href="#">Link Item</a>
+
+                    <p>
+                        Augur et fulgente decorus arcu Phoebus acceptusque novem Camenis.qui salutari levat arte fessos
+                        corporis artus.
+                    </p>
+                </div>
+
+            </div>
+
+            <blockquote>
+                blockquote
+                <br>
+                Augur et fulgente decorus arcu Phoebus acceptusque novem Camenis.
+            </blockquote>
+
+        </div>
+
+        <hr style="margin-left: 20px;margin-right: 20px;">
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="#">XHTML</a> |
+            <a href="#">CSS</a> |
+            <a href="#">WCAG</a> |
+            <a href="#">The CSS Tinderbox</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
