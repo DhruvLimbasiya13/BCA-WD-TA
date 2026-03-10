@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .animation{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            position: absolute;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate-reverse;
+            animation-timing-function: ease-out; */
+        }
+        @keyframes move {
+            from {
+                background-color: crimson;
+            }
+            to {
+                background-color: yellow;
+            }
+            0%{
+                left: 0%;
+                top: 0%;
+            }
+            25%{
+                left: 50%;
+                top: 0%;
+            }
+            50%{
+                left: 50%;
+                top: 50%;
+            }
+            75%{
+                left: 0%;
+                top: 50%;
+            }
+            100%{
+                left: 0%;
+                top: 0%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>
