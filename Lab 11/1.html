@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Classes Demo — Responsive + Pseudo selectors</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.45;
+            color: #222;
+            padding: 18px;
+        }
+
+        h1,
+        h2 {
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        .wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 18px 0;
+        }
+
+        .box {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            background: #fafafa;
+            border-radius: 6px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: green;
+            margin: 6px 0;
+        }
+
+        a:link {
+            color: orange;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        p::first-line {
+            color: cyan;
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+
+        @media (max-width: 820px) {
+            .box {
+                width: 48%;
+            }
+
+            .big {
+                font-size: 20px;
+            }
+
+            .card p {
+                font-size: 15px;
+            }
+
+            body {
+                padding: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .big {
+                font-size: 18px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            body {
+                padding: 10px;
+            }
+        }
+
+        .spacer {
+            height: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>BCA + BSc -IT WD-II Lab</h1>
+
+        <h2>1. Multiple Classes</h2>
+        <div class="box red big">This is a big red box.</div>
+
+        <div class="spacer"></div>
+
+        <h2>2. Multi-level Selector</h2>
+        <div class="card">
+            <p>This paragraph is inside .card so it turns green.</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <h2>3. Multiple Selectors</h2>
+        <p>Both H1 and H2 above are blue because of a multiple-selector rule.</p>
+
+        <div class="spacer"></div>
+
+        <h2>4. Link states and first-line demo</h2>
+        <p>
+            Here is an example link to
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Example.com</a>.
+        </p>
+
+        <p>
+            This paragraph demonstrates ::first-line. Only the first rendered line is bold and cyan. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius suscipit quam excepturi dignissimos fuga optio modi nam magnam perspiciatis. Ut labore quibusdam tempora optio dolorem unde alias omnis accusamus!
+        </p>
+    </div>
+</body>
+
+</html>

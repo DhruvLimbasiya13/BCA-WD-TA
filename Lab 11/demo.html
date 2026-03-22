@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Selects every fourth element among any group of siblings */
+        :nth-child(4) {
+            background-color: yellow;
+        }
+
+        /* Selects the second element of div siblings */
+        p:nth-child(2) {
+            background-color: red;
+        }
+
+        /* Selects the second li element in a list */
+        li:nth-child(2) {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Demo of :nth-child</h1>
+
+    <div>
+        <p>This is some text red.</p>
+        <p>This is some text red2.</p>
+    </div>
+
+    <div>
+        <p>This is some text no color.</p>
+    </div>
+
+    <div>
+        <p>This is some text yellow.</p>
+    </div>
+
+    <ul>
+        <li>First list item no color</li>
+        <li>Second list item green</li>
+        <li>Third list item no color</li>
+        <li>Fourth list item yellow</li>
+        <li>Fifth list item no color</li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Elements & Hover Demo</title>
+
+<style>
+
+p::first-letter {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+::selection {
+    background: yellow;
+    color: black;
+}
+
+.hover-box {
+    width: 200px;
+    padding: 10px;
+    background: lightgray;
+    border: 1px solid black;
+}
+
+.hover-box:hover {
+    background: orange;
+    color: white;
+    font-size: 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h2>1. First Letter Styled</h2>
+<p>This paragraph has its first letter styled using a pseudo-element.</p>
+
+<h2>2. Text Selection Background</h2>
+<p>Select any part of this sentence to see the background turn yellow.</p>
+
+<h2>3. Hover Effect</h2>
+<div class="hover-box">Hover your mouse here</div>
+
+</body>
+</html>
