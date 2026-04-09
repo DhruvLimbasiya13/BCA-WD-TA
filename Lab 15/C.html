@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Open Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
+                <h6 class="text-center mb-4">Open Admin</h6>
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white fw-bold" href="#"><i
+                                class="bi bi-file-earmark-text me-2"></i>Pages</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-person me-2"></i>Admin</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-tools me-2"></i>Helpers</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-folder me-2"></i>Media Manager</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-gear me-2"></i>Config</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-code me-2"></i>Api Tester</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-layout-text-sidebar me-2"></i>Page
+                            Designer</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main -->
+            <div class="col-md-10 p-0">
+
+                <!-- Topbar -->
+                <nav class="navbar bg-white border-bottom px-4">
+                    <span class="navbar-text">
+                        <i class="bi bi-list"></i>
+                    </span>
+                    <span class="ms-auto">
+                        <i class="bi bi-person-circle me-1"></i> Administrator
+                    </span>
+                </nav>
+
+                <!-- Content -->
+                <div class="p-4">
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Page <small class="text-muted">List</small></h5>
+                        <small><i class="bi bi-house"></i> Home / Pages</small>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="mb-3">
+                        <button class="btn btn-success btn-sm"><i class="bi bi-plus"></i> New</button>
+                        <button class="btn btn-primary btn-sm">2 items selected</button>
+                        <button class="btn btn-info btn-sm text-white"><i class="bi bi-funnel"></i> Filter</button>
+                        <button class="btn btn-danger btn-sm"><i class="bi bi-flag"></i> Report</button>
+
+                        <div class="float-end">
+                            <button class="btn btn-primary btn-sm"><i class="bi bi-download"></i> Export</button>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="table-responsive bg-white shadow-sm rounded">
+                        <table class="table table-bordered align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Date</th>
+                                    <th>Tags</th>
+                                    <th>Star</th>
+                                    <th>Created at</th>
+                                    <th>Updated at</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>Homepage</td>
+                                    <td></td>
+                                    <td>
+                                        <span class="badge bg-success">new</span>
+                                        <span class="badge bg-info">special</span>
+                                    </td>
+                                    <td><i class="bi bi-star"></i></td>
+                                    <td>2022-02-17 00:51:01</td>
+                                    <td>2022-06-25 14:30:21</td>
+                                    <td>
+                                        <i class="bi bi-pencil"></i>
+                                        <i class="bi bi-eye ms-2"></i>
+                                        <i class="bi bi-trash ms-2"></i>
+                                    </td>
+                                </tr>
+
+                                <tr class="table-warning">
+                                    <td><input type="checkbox" checked></td>
+                                    <td>2</td>
+                                    <td>Blog</td>
+                                    <td>2022-06-25</td>
+                                    <td><span class="badge bg-success">new</span></td>
+                                    <td><i class="bi bi-star-fill text-primary"></i></td>
+                                    <td>2022-06-25 14:30:33</td>
+                                    <td>2022-06-25 14:30:33</td>
+                                    <td>
+                                        <i class="bi bi-pencil"></i>
+                                        <i class="bi bi-eye ms-2"></i>
+                                        <i class="bi bi-trash ms-2"></i>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>3</td>
+                                    <td>About us</td>
+                                    <td>2022-06-25</td>
+                                    <td></td>
+                                    <td><i class="bi bi-star-fill text-primary"></i></td>
+                                    <td>2022-06-25 14:36:58</td>
+                                    <td>2022-06-25 14:37:40</td>
+                                    <td>
+                                        <i class="bi bi-pencil"></i>
+                                        <i class="bi bi-eye ms-2"></i>
+                                        <i class="bi bi-trash ms-2"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="d-flex justify-content-between mt-3">
+                        <small>Showing 1 to 6 of 6 entries</small>
+                        <div>
+                            <select class="form-select form-select-sm d-inline w-auto">
+                                <option>20</option>
+                            </select>
+                            <button class="btn btn-sm btn-primary ms-2">1</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
